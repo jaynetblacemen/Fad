@@ -27,9 +27,9 @@ public:
         QString name = currentFile.isEmpty() ? "Untitled" : QFileInfo(currentFile).fileName();
 
         if(modified)
-            setWindowTitle("Fed — " + name + " *");
+            setWindowTitle("Fad — " + name + " *");
         else
-            setWindowTitle("Fed — " + name);
+            setWindowTitle("Fad — " + name);
     }
 
     void loadFile(QString fileName)
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    FedEditor editor;
+    FadEditor editor;
 
     editor.resize(900, 600);
     editor.setFrameStyle(QFrame::NoFrame);
